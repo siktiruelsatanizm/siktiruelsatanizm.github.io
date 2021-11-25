@@ -1,0 +1,336 @@
+<html>
+
+<head>
+<style>
+.container {  
+width: 100%;  
+height: 100px; 
+display: flex;  
+justify-content: center;  
+align-items: center;  
+}  
+button {  
+ background-color: #d40606;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin: 4px 2px;
+ cursor: pointer;  
+}
+
+button:hover {
+  background-color: #870000;
+}
+
+:root {
+  --primColor: #dcdcdc;
+  --secoColor: #d40606;
+  --cornerRad: 4px;
+}
+body {
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+details {
+  margin: 40px;
+}
+summary {
+  writing-mode: vertical-lr;
+  text-align: center;
+  padding: 12px 10px;
+  width: 23px;
+  height: 17px;
+  background-color: #0a0a0a;
+  border: 2px solid #000000;
+  border-radius: var(--cornerRad);
+  color: var(--secoColor);
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  transition: transform 200ms ease-in-out 0s;
+}
+summary::before,
+summary::after {
+  position: static;
+  top: 0;
+  left: 0;
+}
+summary::before {
+  content: "";
+}
+summary::after {
+  content: "III";
+  letter-spacing: -1px;
+}
+summary:hover {
+  transform: scale(1.1);
+}
+summary::marker {
+  font-size: 0;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+details[open] summary::before {
+  content: "X";
+}
+details[open] summary::after {
+  content: "";
+}
+.menu {
+  height: 0;
+  width: fit-content;
+  border-radius: #0a0a0a;
+  background-color: #0a0a0a;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color: var(--secoColor);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+.menu a:nth-of-type(1) {
+  padding-top: 24px;
+}
+.menu a:nth-last-of-type(1) {
+  border-bottom: none;
+}
+.menu a:hover {
+  filter: brightness(100%);
+}
+details::before {
+  content: "← Hızlı Erişim";
+  color: var(--secoColor);
+  position: absolute;
+  margin-left: 60px;
+  padding: 10px 10px;
+  opacity: 0.6;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 312px;
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>
+
+<style>
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #d40606;
+}
+
+p {
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #9c0505;
+}
+
+a {
+  text-decoration: none;
+  color: #008CBA;
+}
+
+body {
+  background-image: url('https://i.hizliresim.com/76dhig7.png');
+}
+
+b{
+  text-indent: 50px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #030303;
+}
+
+hr {
+  background-color: #820000;
+  height: 1px;
+  border: 0px;
+}
+</style>
+
+<details>
+  <summary></summary>
+  <nav class="menu">
+    <a href="#onedio_link">Başlangıç</a>
+    <a href="#ozet">Kısa Özet</a>
+    <a href="#ayetler">Ayetler</a>
+    <a href="#hades">Hades-i Şeref</a>
+    <a href="#rituel">Ritüel</a>
+	<a href="#hakkında">Hakkında</a>
+  </nav>
+</details>
+
+</head>
+
+
+<head>
+
+<title>Ucube99 Hakkında!</title>
+
+<body>
+
+<div>
+  <a name="onedio_link"></a>
+  <h1>SİKTİRÜEL SATANİZM</h1>
+  <p>Onedio'dan yaptığım İQ testleriyle İQ'mun 220 olduğunu öğrendim bende benim gibi bir dehanın bu dünyada önemli bir şey yapması gerektiğini düşündüm din yazmaya karar verdim.
+  <a target="_blank" href="https://onedio.com/haber/bu-10-soruluk-iq-testi-senin-zeka-yasini-ortaya-cikaracak-894028">"Denemek için"</a> link.</p>
+  <p>.</p>
+  <p>Neden Satanizm?</p>
+  <p>Kesinlikle sebebi kulağa cool gelmesi değil ruhumuzun mutlak enerjisinin içinde kötülükte hav hav bir şeyler işte...</p>
+  <p>.</p>
+  <p>Neden Siktirüel?</p>
+  <p>Sprituel Satanizm'in çoktan alınmış olması şimdilik dinin sürümü düşük...</p>
+  <hr>
+</div>
+<div class="container">  
+<button onclick="window.location.href='http://www.foo.com'"> UCUBE99 HAKKINDA </button>  
+</div> 
+
+<script>
+
+	function myFunction() {
+		console.log("Hello World");
+		var url = "http://www.foo.com";
+		window.location(url);
+	}
+
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br> <br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br> <br> 
+
+<div>
+  <a name="ozet"></a>
+  <h1>KISA ÖZET</h1>
+  <p>Dinimiz gereğince biz uçan pasta (HAYIR makarna değil.) canavarına inanıyoruz.</p>
+  <p>Çok entelektüel olduğumuz için cehennemin veyahut (hut burada kulübe anlamında) cennetin varlığına inanmıyoruz.</p>
+  <p>Her siktirüel satanizm inancı destekleyicisinin arafa gideceğini düşünüyoruz çünkü her iyilikte kötü amaç var hav hav...</p>
+  <p>Bir şeyler tam tersi içinde aynısı işte...</p>
+</div>
+  <hr>
+<br><br><br><br><br><br><br><br><br> 
+<br><br><br><br><br><br><br><br><br><br>
+
+<div>
+  <a name="ayetler"></a>
+  <h1>AYETLER</h1>
+  <p>1• Eğer bir kadın(savaş ganimeti yani) size itaat etmiyorsa onu ilk önce yatakta yalnız bırakın...</p>
+  <p>2• Biz onlar kanıt aradığında onlara şu dağları kim yarattı o zaman demedik mi?</p>
+  <p>3• Dinimiz 500000 yıldır vardır though it havent changed a bit.</p>
+  <p>4• Biz hayvanları siz yiyin köleleştirin veya binek olarak kullanın diye yarattık biz onlara bir ruh vermedik ama siz onları kullanırken acı çeksinler diye sinirler verdik</p>
+  <p>5• Yeni açtığımız çiftlik bank şirketi (HAYIR dolandırıcı olan değil.) batıyor sizede zorla standartta olması gerektiğinden pahalı hayvanlar satın aldırtmak için kurban diye birşey getiriyoruz buna göre her yıl her siktirüel satanizme inanan vatandaş bir hayvan adak etmelidir bu hayvan çok küçük olamaz yoksa kar edemeyiz sizde abuselarsınız.</p>
+  <p>6• Her siktireül satanizm üyesi hayatında en az bir kere dinimizce kutsal kabul edilen HATAY a gelmelidir elleriyle künefe yerken ve 1 hafta kalmak için 5 6 yıllık birikimini harcarken fakir insanlara dua etmelidir.</p>
+  <p>7• Bir siktirüel satanizm destekleyicisinin karşısında duran ne olursa olsun bir dövme yaptırması gereklidir bu dövme satanizmle ne kadar az alakalı olursa o kadar iyi olur (davutun yıldızı gibi)...</p>
+  <p>8• Bir siktirüel satanizm destekleyicisi hiçbir şekilde insanlara eşit olarak bakmaması gerektedir bu bir kadın/erkek ayrımcılığı veya siyah/beyaz ayrımcılığı tarzında olmak zorunda değildir gelecekte kazanç sağlıyabilir/sağlıyamaz gibi ayrımcılık yapması bile yeterlidir kesinlikle ama kesinlikle bir düşünce söylendiğinde ilk önce düşünceye değil söylüyen kişiye bakılmalıdır aksi düşünülemez bile.</p>
+  <p>9• Bir siktirüel satanizm destekleyicisi her gün en azından bir kere yalan söylemek zorundadır söylediği yalan inandırıcı olmaz ve fazla belli olursa daha iyi olur.</p>
+  <p>10• Erkek kadın üzerinde kazançları,harcalamaları sebebiyle hüküm sahibidir yani eğer bir kadınsanız yeni bir işe başlamanızla yeni bir adamla evlenmeniz arasında pek fark yok eğerki bir kadın erkeğin düşüncesiyle uyuşmuyan bir düşünceyi savunuyorsa acilen düşünme yetkisi elinden alınmalı ve ayet No 1 uygulanmalıdır.</p>
+  <hr>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br> 
+	<h1>AYETLERİN DEVAMI</h1>
+  <p>11• Biz yazarlar konseyi olarak pardon yani tanrılar konseyi olarak hayvanları insan evladı tarafından yensin,kullanılsın diye yarattık ama bunu yaparken birde hayvanlara sinir verdik ki acıyı hissetsinler bunun bir sebebi şimdilik yok çünki yazarlar pardon tanrılar konseyi olarak pek yaratıcı değiliz bir şeyler sıkamadık.</p>
+  <p>12• Haçlı seferleri siktirüel satanizm inancına göre yanlış bulunmaktadır çünki dine yaymak amacıyla insanları öldürmek mantıksızdır vede doğru bir yöntem değildir.</p>
+  <p>13• Jihad ♥.</p>
+  <p>14• Eğer ki siktirüel satanizmi korumak istiyorsanız bize düşünceleri ile saldıranlara karşı yapabiliceğiniz en mantıklı şey hiçbir ayet okumamış olan insanlara siktirüel satanizmi olmadığı bir şekilde övmek olucaktır onlar ayetleri görmediği için yapılan hataları görmücektir pardon ayetleri görmedikleri için pure olucaklardır kalperinin en derininden savunacaktır (denendi etkisi gözlemlendi siktirüel satanizm <a href="https://en.wikipedia.org/wiki/Verification">verified</a>).</p>
+  <p>15• Eğer siktirüel satanizm inacına sahip birinin çocuğu olmuşsa çocuk 13 yaşına gelene kadar zorunlu siktirüel satanizm ile alakalı etkinlikler ayinler vede ibadetlere katılması gerekmektedir 13 yaşından sonrası fazla önemli değil.</p>
+  <p>16• ARİKİ O TE WARİA,içinizden herhangi bir oğlu babası değildir. O, SATAN'ın elçisi ve peygamberlerin sonuncusudur. SATAN,her şeyi bilendir.</p>
+  <p>17• Fizik kurallarına göre bir madde yoktan varolamaz buda tanrının varlığını kesin bir şekidle kanıtlar.</p>
+  <p>18• Bizim dinimiz doğruluk dinidir. cennete gitmek için insanların ne kadar paraya sahip olduğu değil ne kadar insana yardım ettikleri önemlidir o yüzden paralayıla açları doyurmalı paralarını yada yiyeceklerini israf etmemelidir.</p>
+  <p>19• <a href="https://steamcommunity.com/id/siktiruelsatanizm">Sitemizden</a> özel siktirüel satanizm ürünlerimizi satın alabilirsiniz (birkaç eşya : sevap puanı 2 ye katlıyan giysi, cennete giriş bileti, satan tarafından kutsanmış yemek).</p>
+  <p>20• Siz dünyaya sınava gönderildiniz yaptığınız tercihler cennet veya cehenneme gidiceğinizi belirliyecek ama bu sınavda doğru cevapları gösteren bir kitap var ve kimse size hangi kitabın doğru oldugunu söylemicek sayısal loto oynuyorsunuz yani xd.</p>
+  <p>21• Şaka şaka bu aslında iradeniz bir sınavı ne kadar karşıkoyabildiğinizin felan filan dicemde irade gücünüzüde siz belirlemiyorsunuzki ne yapsak neyse siktir et sonra değiştiririz.</p>
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br> 
+
+	<h1>AYETLERİN DEVAMI</h1>
+  <p>22• Arkdaşlar bildiğiniz kadarıyla <a href="https://www.youtube.com/user/sozlerkosku">Sözler Köşkü</a> adında bir youtube kanalımız var ♥♥♥♥♥♥ çocugu ♥♥♥♥♥♥ çocuğu videolar çekiyoruz takip ederseniz çok memnun oluruz.</p>
+  <p>23• Bu ayette bi sikim anlatılmıyor ama siz altında çok gizli anlamlar varmış gibi yorumlayıp ateistleri "morartmak" için kullanın.</p>
+  <p>24• Eğer tüm siktirüel satanizm e inanan kişiler birleşseydi karşısına geçilmiyen bir güç oluşurdu ama bu Amerika (sadece Amerika dünyadaki tek ülke Amerika zaten) tarafından engelleniyor onlara kulak asmayın kedi kesen inançlılarla kafa kesen inançlılarla bir olun ve ideolojinizi (tabi öyle birşey kalırsa) yayın.</p>
+  <hr>
+
+</div>
+
+<br><br><br><br><br><br><br>
+
+
+<div>
+  <a name="hades"></a>
+  <h1>HADES-İ ŞEREF</h1>
+  <p>"Kim ki aklından eş cinselliği geçirmek olmak o hasta" - sallallahu aleyhi ve sellem ve alla sellanize itinaie sıratelle e ananın amı artık ıhtına usta yoda hazretleri paşa efendi.</p>
+</div>
+  <hr>
+
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+
+<div>
+  <a name="rituel"></a>
+  <h1>RİTÜEL</h1>
+  <p>1- İlk olarak ayin için gerekli giysileri giyin bu giysilerin tam olarak neye benzediğini öğrenmek için internete kkk yazabilirsiniz.</p>
+  <p>2- Ayin için gerekli eşyaları hazırlayın : mumları yakın dışarıdaki tüm ışık kaynaklarını kapatın tepsideki künefelerinizi altarın iki tarafına koyun.</p>
+  <p>3- Eğer altar olarak bir succubus pardon kadın diyecektim kullanılıyorsa kadının ayin sırasında varoluşunu en az 40 kere sorgulaması gerek.</p>
+  <p>4- Çan çalarak havadaki kötü güçlerden felan filan kurtulun</p>
+  <p>5-infernal names bir priest tarafından birer birer okunur ve yanındaki diğer katılımcılar tarafından tekrar edilir sona geldiğinde aralarından birisi satana kendisini adak olarak verir sonrasında inançlılar hiçbir işe yaramıyan bir ayin yapıp aralarından birini adak verdikleri için mutlu olurken kız düşürmek için satanist olanlar evlerine gidip altar görevi gören kadını düşünürler (gerisini hepimiz biliyoruz).</p>
+  <hr>
+</div>
+<br><br><br><br><br><br><br>
+<a name="hakkında"></a>
+<div class="container">  
+<button onclick="window.location.href='http://www.foo.com'"> UCUBE99 HAKKINDA </button>  
+</div> 
+<p>BİLGİLER <a href="https://steamcommunity.com/id/capansj/">SİTEYİ YAPAN KİŞİYE</a> AİT DEĞİLDİR.</p>
+<br>
+<div>
+<p>KAYNAKÇA: •<a href="https://steamcommunity.com/id/siktiruelsatanizm">1.Reyvın</a>  •<a href="https://steamcommunity.com/id/ArikiOTeWaria">2.Ariki O Te Waria</a>.</p>
+  <hr>
+  <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+	  <br><br><br><br>
+<p>Tamamen ironidir.</p>
+<b>LÜTFEN DAVA AÇMAYIN.</b>
+	  <br><br><br>
+<b>BU SİTE UCUBELİK AMAÇLIDIR.</b>
+</div>
+<><>
+</body>
+
+
+</head>
+
+
+</html>
